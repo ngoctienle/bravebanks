@@ -1,10 +1,17 @@
 import React, { Fragment } from 'react'
+import { Container } from './components/Global'
+import Header from './components/Header'
 
 const App = () => {
   return (
     <Fragment>
-      <header className="font-medium">ABC</header>
-      <main>ABC</main>
+      <Header />
+      <div className="animation-global"></div>
+      <div className="animation-global"></div>
+      <div className="animation-global"></div>
+      <main className="pt-[50px]">
+        <Container>ABC</Container>
+      </main>
     </Fragment>
   )
 }
