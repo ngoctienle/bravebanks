@@ -1,9 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: 'class',
   theme: {
     extend: {
+      backgroundImage: {
+        'animation-1': "url('/src/assets/images/animation-1.png')",
+        'animation-2': "url('/src/assets/images/animation-2.png')"
+      },
       transitionProperty: {
         height: 'height',
         width: 'width',
@@ -35,6 +42,22 @@ module.exports = {
           'sans-serif',
           ...defaultTheme.fontFamily.sans
         ]
+      },
+      keyframes: {
+        'animation-1': {
+          '0%': { transform: 'scaleY(1.3)' },
+          '50%': { transform: 'scaleX(1)' },
+          '100%': { transform: 'scaleY(1.3)' }
+        },
+        'animation-2': {
+          '0%': { transform: 'scale3d(1.5, 0.3, 2)' },
+          '50%': { transform: 'scaleY(1.5)' },
+          '100%': { transform: 'scale3d(1.5, 0.3, 2)' }
+        }
+      },
+      animation: {
+        'bg-1': 'animation-1 60s ease infinite',
+        'bg-2': 'animation-2 60s ease infinite'
       }
     },
     screens: {
@@ -46,5 +69,9 @@ module.exports = {
     }
   },
 
-  plugins: []
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant('not-first', '&:not(:first-child)')
+    })
+  ]
 }
