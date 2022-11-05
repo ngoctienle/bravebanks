@@ -6,7 +6,6 @@ export const Container = tw.div`
     laptop:max-w-[1140px]
     tablet:max-w-[960px]
     mobile:max-w-[720px]
-    mobile-xs:max-w-[540px]
 `
 
 export const AnimationDiv = tw.div`

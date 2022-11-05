@@ -65,7 +65,7 @@ const HeaderSetting = () => {
             {theme === 'dark' ? 'Dark Mode' : 'Light Mode'}
           </span>
           <label
-            for="default-toggle"
+            htmlFor="default-toggle"
             className="inline-flex relative items-center cursor-pointer ml-11"
           >
             <input
