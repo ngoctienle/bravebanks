@@ -13,10 +13,8 @@ const Header = () => {
       <Container>
         <HeaderWrapper>
           <HeaderLogo />
-          
 
-
-          <div className='flex items-center gap-3'>
+          <div className="flex items-center gap-3">
             <HeaderSearch />
             <HeaderSetting />
           </div>
