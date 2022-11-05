@@ -11,17 +11,17 @@ const App = () => {
     <Fragment>
       <Header />
 
-      <AnimationDiv className='hidden dark:block'/>
+      <AnimationDiv className="hidden dark:block" />
       <AnimationDiv className="hidden dark:block dark:animate-bg-1 dark:bg-animation-1" />
       <AnimationDiv className="hidden dark:block dark:animate-bg-2 dark:bg-animation-2" />
 
       <main className="pt-[60px]">
         <Routes>
-          <Route path='/post/:slug' element={<></>} />
+          <Route path="/post/:slug" element={<></>} />
 
-          <Route path='/auth' element={<AuthPage />} />
+          <Route path="/auth" element={<AuthPage />} />
 
-          <Route path='/' element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
       </main>
     </Fragment>

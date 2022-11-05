@@ -56,10 +56,17 @@ const HeaderSetting = () => {
 
   return (
     <div className="relative">
-      <div onClick={handleActiveSetting} className="rounded-full w-6 h-6 flex items-center justify-center bg-light/20 hover:bg-light/30 dark:bg-primary/20 dark:hover:bg-primary/30 transition-colors cursor-pointer">
+      <div
+        onClick={handleActiveSetting}
+        className="rounded-full w-6 h-6 flex items-center justify-center bg-light/20 hover:bg-light/30 dark:bg-primary/20 dark:hover:bg-primary/30 transition-colors cursor-pointer"
+      >
         <IconSetting size={16} />
       </div>
-      <div className={`absolute top-[200%] right-0 transition-opacity ${active ? 'opacity-100 visible' : 'opacity-0 invisible'} w-auto h-auto bg-white dark:bg-[#212121]/30 rounded-[10px] p-4 blur-menu`}>
+      <div
+        className={`absolute top-[200%] right-0 transition-opacity ${
+          active ? 'opacity-100 visible' : 'opacity-0 invisible'
+        } w-auto h-auto bg-white dark:bg-[#212121]/30 rounded-[10px] p-4 blur-menu`}
+      >
         <div className="flex justify-between p-2">
           <span className="whitespace-nowrap">
             {theme === 'dark' ? 'Dark Mode' : 'Light Mode'}

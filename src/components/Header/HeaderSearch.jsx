@@ -26,7 +26,10 @@ const HeaderSearch = () => {
   return (
     <SearchWrapper>
       <SearchIcon size={16} />
-      <InputSearch type="text" placeholder="Search by name, categories, etc.." />
+      <InputSearch
+        type="text"
+        placeholder="Search by name, categories, etc.."
+      />
     </SearchWrapper>
   )
 }
