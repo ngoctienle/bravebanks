@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html,
+  body {
+    font-family: 'M PLUS 1 Code', sans-serif;
+  }
+}
+
 .blur-custom::before {
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2px 2.4rem 0 rgb(0 0 0 / 10%);
+}
+.blur-menu {
   backdrop-filter: blur(20px);
   box-shadow: 0 2px 2.4rem 0 rgb(0 0 0 / 10%);
 }

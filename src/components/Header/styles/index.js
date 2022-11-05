@@ -7,5 +7,15 @@ export const Main = tw.header`
 `
 
 export const HeaderWrapper = tw.div`
-    flex items-center justify-between h-[50px]
+    flex items-center justify-between h-[60px]
 `
+
+export const SearchWrapper = tw.div`
+    flex items-center bg-[#11100f] px-4 py-1 w-[200px] relative transition-all rounded-[10px] focus-within:w-[300px]
+`
+export const InputSearch = props => {
+  const classes =
+    'bg-transparent border-transparent ml-4 w-full overflow-hidden whitespace-nowrap outline-none text-dark text-16 placeholder:text-14 text-ellipsis'
+
+  return <input className={classes} {...props} />
+}

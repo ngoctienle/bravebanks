@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
@@ -26,6 +25,8 @@ module.exports = {
       },
       colors: {
         main: '#1c1c1c',
+        dark: '#a9a9a9',
+        light: '#5e5e5e',
         primary: '#31CB9E'
       },
       spacing: {
@@ -35,13 +36,6 @@ module.exports = {
         14: '14px',
         16: '16px',
         18: '18px'
-      },
-      fontFamily: {
-        main: [
-          '"M PLUS Rounded 1c"',
-          'sans-serif',
-          ...defaultTheme.fontFamily.sans
-        ]
       },
       keyframes: {
         'animation-1': {
@@ -64,8 +58,10 @@ module.exports = {
       'mobile-xs': '576px',
       mobile: '768px',
       tablet: '992px',
-      laptop: '1200px',
-      desktop: '1440px'
+      laptop: '1200px'
+    },
+    fontFamily: {
+      main: ['M PLUS 1 Code', ' sans-serif']
     }
   },
 
