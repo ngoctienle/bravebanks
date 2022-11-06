@@ -58,7 +58,8 @@ module.exports = {
       'mobile-xs': '576px',
       mobile: '768px',
       tablet: '992px',
-      laptop: '1200px'
+      laptop: '1200px',
+      desktop: '1440px'
     },
     fontFamily: {
       main: ['M PLUS 1 Code', ' sans-serif']
