@@ -29,6 +29,11 @@ module.exports = {
         light: '#5e5e5e',
         primary: '#31CB9E'
       },
+      borderRadius: {
+        DEFAULT: '4px',
+        8: '8px',
+        10: '10px'
+      },
       spacing: {
         10: '10px'
       },
