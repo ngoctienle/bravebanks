@@ -72,6 +72,7 @@ module.exports = {
   },
 
   plugins: [
+    require('@tailwindcss/line-clamp'),
     plugin(function ({ addVariant }) {
       addVariant('not-first', '&:not(:first-child)')
     })
