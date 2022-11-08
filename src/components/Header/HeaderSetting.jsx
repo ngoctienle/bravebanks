@@ -32,7 +32,7 @@ const HeaderSetting = () => {
   const [active, setActive] = useState(false)
 
   useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if ((!('theme' in localStorage) || window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setTheme('dark')
     } else {
       setTheme('light')
