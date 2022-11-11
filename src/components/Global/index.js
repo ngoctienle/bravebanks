@@ -12,3 +12,7 @@ export const Container = tw.div`
 export const AnimationDiv = tw.div`
     z-[-1] fixed w-full h-screen top-0
 `
+
+export const TitleBlog = tw.h2`
+    text-[24px] text-black dark:text-white hover:text-primary dark:hover:text-primary transition-colors
+`
